@@ -1,0 +1,32 @@
+
+.contact-form {
+    margin-top: 30px;
+}
+
+.contact-form .btn {
+    width: 100%;
+    display: block;
+}
+
+.contact-form .btn::before {
+    display: none;
+}
+
+.contact-form .btn i {
+    font-size: 11px;
+    vertical-align: middle;
+    padding: 0 0 3px 3px;
+}
+
+@media (min-width: 768px) {
+    .contact-section {
+        padding-top: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contact-section {
+        padding-top: 45px;
+    }
+}
+

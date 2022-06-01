@@ -1,0 +1,225 @@
+.exclusives {
+    background-color: #D8E2E3;
+    padding: 40px 0 55px 0;
+}
+
+.exclusives__wrapper h2 {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.exclusive-box {
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px dashed #84A7AA;
+    padding: 20px 12px 26px 12px;
+    text-align: center;
+    height: 100%;
+}
+
+.exclusive-box h4 {
+    padding-bottom: 11px;
+}
+
+.exclusive-coupon {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 10px;
+}
+
+.exclusive-coupon span {
+    color: #043F45;
+    font-size: 13px;
+    font-weight: 700;
+    background-color: #D8E2E3;
+    border-radius: 3px;
+    padding: 1px 5px;
+}
+
+.exclusive-box p {
+    color: rgba(47,62,70,.0.85);
+    font-size: 12px;
+    padding-bottom: 20px;
+}
+
+.js-exclusive {
+    padding-bottom: 68px;
+}
+
+.js-exclusive .slick-prev, .js-exclusive .slick-next {
+    color: #84A7AA;
+    border: 1px solid #D8E2E3;
+    z-index: 99;
+    background-color: #fff;
+}
+
+.js-exclusive .slick-next {
+    left: auto;
+    right: 0;
+}
+
+.js-exclusive .slick-prev {
+    left: auto;
+    right: 42px;
+}
+
+.js-exclusive .slick-track {
+    display: flex;
+}
+
+.js-exclusive .slick-slide {
+    height: auto;
+}
+
+.exclusive-bttn {
+    margin-top: -44px;
+    position: relative;
+    z-index: 1;
+}
+
+@media (min-width: 768px) {
+
+    .exclusives {
+        padding: 48px 0 66px 0;
+    }
+
+    .js-exclusive {
+        margin: 0 -16px;
+    }
+    .js-exclusive__item {
+        padding: 0 16px;
+    }
+
+    .exclusive-box {
+        padding: 30px 6px 35px 6px;
+    }
+
+    .exclusive-bottom .btn {
+        padding-left: 12px;
+        font-size: 15px;
+        padding-right: 40px;
+    }
+
+    .exclusive-bottom .btn::before {
+        right: 15px;
+    }
+
+    .js-exclusive .slick-prev, 
+    .js-exclusive .slick-next {
+        width: 53px;
+        height: 53px;
+    }
+
+    .js-exclusive .slick-prev::before, 
+    .js-exclusive .slick-next::before {
+        font-size: 21px;
+        line-height: 2.52em;
+    }
+
+    .js-exclusive {
+        padding-bottom: 85px;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+
+    .exclusives {
+        overflow: hidden;
+        padding: 124px 0 139px 0;
+        position: relative;
+    }
+
+    .exclusives::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 380px;
+        height: 100%;
+        /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#eff4f0+0,eff4f0+100&0+0,1+100 */
+        background: -moz-linear-gradient(left,  rgba(239,244,240,0) 0%, rgba(239,244,240,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(left,  rgba(239,244,240,0) 0%,rgba(239,244,240,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right,  rgba(239,244,240,0) 0%,rgba(239,244,240,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00eff4f0', endColorstr='#eff4f0',GradientType=1 ); /* IE6-9 */
+
+    }
+
+    .exclusives__img {
+        float: left;
+        width: 533px;
+    }
+
+    .exclusives__wrapper {
+        width: calc(100%  - 452px);
+        float: left;
+        margin-left: -81px;
+    }
+
+    .exclusive-box {
+        width: 248px;
+    }
+
+    .exclusive-inner {
+        width: 2500px;
+    }
+
+    .js-exclusive .slick-next,
+    .js-exclusive .slick-prev  {
+        left: 685px;
+    }
+    
+    .js-exclusive .slick-prev {
+      margin-left: -53px;
+    }
+
+    .exclusives__wrapper h2 {
+        text-align: left;
+        padding-left: 172px;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .exclusive-bttn {
+        padding-left: 172px;
+    }
+
+    .exclusive-bottom .btn {
+        padding: 17px 58px 17px 40px
+    }
+
+    .exclusive-bottom .btn::before {
+        right: 40px;
+    }
+
+    .exclusives .slick-slide {
+        opacity: 0;
+    }
+
+    .exclusives .slick-slide.slick-active {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 1366px) {
+    .js-exclusive .slick-next, 
+    .js-exclusive .slick-prev {
+        left: 852px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .js-exclusive .slick-next, 
+    .js-exclusive .slick-prev {
+        left: 892px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .js-exclusive .slick-next, 
+    .js-exclusive .slick-prev {
+        left: 838px;
+    }
+}

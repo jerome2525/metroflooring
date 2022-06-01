@@ -1,0 +1,121 @@
+/*------------------------------------*\
+    
+    WebFX Slick Customizations - Global styling for all slider/carousels
+
+    Add custom slider styling to this file if it should be applied to all slick sliders on the site
+    Otherwise, put your slider-specific styles in individual block stylesheets
+
+\*------------------------------------*/
+
+
+/* Preloader affect for your slider */
+
+.js-slider-has-preloader {
+    /* Add class to slider to show  */
+    min-height: 50px;
+    position: relative;
+}
+
+.js-slider-has-preloader:before {
+    content: url('../img/loading.gif');
+    /* Create and upload a loading gif to your image directory */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    /* Update width based on gif size */
+    height: 50px;
+    /* Update height based on gif size */
+    transition: all .5s ease;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.js-slider-has-preloader-init:before {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+
+
+/* Only show the 1st slide while your slider is loading - Utility Classes
+NOTE: Add the .fx-slider class to the wrapper that is holding your entire slider.
+NOTE: Add the .fx-slide class to the wrapper of each individual slide.
+Guru: https://app.getguru.com/card/ixR67EpT/Slick-Slider
+*/
+
+.fx-slider .fx-slide { 
+    display: none;
+}
+
+.fx-slider .fx-slide:first-child { 
+    display: block;
+}
+
+.fx-slider.slick-initialized .fx-slide {  
+    display: block;
+}
+
+
+.slick-prev,
+.slick-next {
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 42px;
+    height: 42px;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+    z-index: 9;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 0;
+    margin-bottom: 0;
+    border: 1px solid rgba(216, 226, 227, 0.22);
+}
+
+.slick-next {
+    left: 64px;
+    border-radius: 0 3px 3px 0;
+    border-left: 0;
+}
+
+.slick-prev {
+    left: 22px;
+    border-radius: 3px 0 0 3px;
+}
+
+.slick-prev::before {
+    content: "\e901";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    line-height: 2.47em;
+    font-family: 'icomoon';
+    font-weight: normal;
+}
+
+.slick-next::before {
+    content: "\e902";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 17px;
+    line-height: 2.47em;
+    font-family: 'icomoon';
+    font-weight: normal;
+}
+
+
+

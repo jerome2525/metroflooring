@@ -1,0 +1,25 @@
+.gallery__images{
+    padding: 60px 0;
+}
+
+.gallery__image-container{
+    margin-bottom: 30px;
+}
+
+.gallery__image{
+    border-bottom: none;
+}
+
+.gallery__image img{
+    width: 100%;
+    height: auto;
+}
+
+.category-gallery{
+    float: right;
+
+}
+
+.gallery__title{
+    display: none;
+}

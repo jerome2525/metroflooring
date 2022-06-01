@@ -1,0 +1,166 @@
+.time-count-down {
+    background-color: #21555A;
+    padding: 40px 0 53px 0;
+}
+
+.time-count-down__wrapper {
+    position: relative;
+}
+
+.time-count-down-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.time-count-down-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.time-count-down__wrapper {
+    background-color: rgba(31, 85, 90, 0.75);
+}
+
+.time-count-down__wrapper h3 {
+    color: #fff;
+    font-size: 25px;
+    padding-bottom: 25px;
+}
+
+.time-count-down__wrapper .btn-secondary {
+    margin-top: 62px;
+}
+
+.time-count-down__wrapper .allTime {
+    width: 290px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.time-count-down-item {
+    position: relative;
+}
+
+.allTime div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 84px;
+    height: 83px;
+    background-color: #043F45;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    position: relative;
+}
+
+.allTime div:before {
+ content: ' : ';
+ position: absolute;
+ top: 46%;
+ right: -4px;
+ font-size: 30px;
+ color: #fff;
+ transform: translate(10px , -50%);
+}
+
+.allTime div:last-child:before {
+    display: none;
+}
+
+.allTime span {
+    position: absolute;
+    font-size: 13px;
+    color: #84A7AA;
+    bottom: -30px;
+    text-transform: uppercase;
+}
+
+.time-count-down-item h2 {
+    color: #fff;
+
+}
+
+@media(min-width: 768px){
+    .time-count-down {
+        background-color: transparent;
+    }
+
+    .time-count-down__wrapper .allTime {
+        width: 383px;
+    }
+
+    .allTime div {
+        width: 106px;
+        height: 105px;
+        font-size: 39px;
+    }
+
+    .allTime div:before {
+        right: -11px;
+    }
+
+    .allTime span {
+        font-size: 15px;
+    }
+
+    .time-count-down__wrapper {
+        width: calc(100% + 104px);
+        margin-left: -52px;
+    }
+
+    .time-count-down {
+        padding: 0 0;
+    }
+
+    .time-count-down-item {
+        padding: 65px 0 ;
+    }
+}
+
+@media(min-width: 1200px) {
+    .time-count-down__wrapper {
+        width: calc(100%);
+        margin-left: 0px;
+    }
+
+    .allTime span {
+        font-size: 18px;
+        color: #fff;
+        bottom: -35px;
+    }
+    
+    .time-count-down__wrapper .btn-secondary {
+        margin-top: 66px;
+    }
+
+    .time-count-down {
+        position: relative;
+        z-index: 1;
+    }
+
+    .time-count-down::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 50%;
+        background-color: #EBF0F1;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .time-count-down-item h5 {
+        color: #fff;
+        padding-bottom: 25px;
+    }
+}

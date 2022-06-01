@@ -1,0 +1,333 @@
+.cards {
+    padding-top: 42px;
+    margin-bottom: 0;
+    background-color: #fff;
+    padding-bottom: 0;
+}
+
+.card-flex {
+    padding-top: 20px;
+}
+
+.card-flex:before,
+.card-flex:after {
+    display: none;
+}
+
+.card__img-wrap {
+    position: relative;
+    width: 100%;
+}
+
+.card__img,
+.card__icon {
+    width: 100%;
+    height: 100%;
+}
+
+.card__img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center center;
+       object-position: center center;
+}
+
+.card__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__icon > span {
+    font-size: 30px;
+}
+
+.card__cta {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-top: auto;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #21555A;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.card__cta:hover {
+    background-color: #21555A;
+}
+
+.card__cta i {
+    font-size: 12px;
+    font-weight: 400;
+    padding-left: 5px;
+}
+
+.card__description {
+    font-size: 15px;
+}
+
+.card__bottom {
+    padding-top: 15px;
+}
+
+
+.cards .fx-accordion__panel__toggle {
+    list-style-type: none !important;
+    margin: 0 0 0;
+    padding: 0;
+    display: block;
+    color: inherit;
+    line-height: normal;
+    background: transparent;
+    padding: 15px 0 10px 0;
+    text-decoration: none;
+    border: none;
+    border-bottom: 5px solid #D8E2E3;
+    border-radius: 0;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: #043F45;
+    position: relative;
+}
+
+.cards .fx-accordion__panel.is-expanded .fx-accordion__panel__toggle {
+    border-bottom: 5px solid #84A7AA;
+}
+
+.cards .fx-accordion__panel__toggle::before {
+    content: "\e903";
+    font-family: 'icomoon';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 13px;
+    font-weight: normal;
+    color: #043F45;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 3.4em;
+    background-color: transparent;
+}
+
+.cards .fx-accordion__panel.is-expanded .fx-accordion__panel__toggle::before {
+    transform: rotate(-180deg);
+    background: #21555A;
+    color: #fff;
+    border-radius: 0 0 3px 3px;
+    bottom: -5px;
+    top: auto;
+}
+
+.cards .fx-accordion__panel__toggle::after {
+    display: none;
+}
+
+.cards .fx-accordion__panel__content {
+    padding: 20px 25px 35px;
+    box-shadow: 0 3px 15px rgba(23, 76, 79, 0.16);
+    border-top: 0;
+    overflow: hidden;
+    color: #2F3E46;
+    border: none;
+    margin-bottom: 25px;
+}
+
+.card-item.fx-accordion__panel {
+    box-shadow:none;
+    margin-bottom: 0;
+    border-radius: 3px;
+    overflow: visible ;
+    background-color: #fff;
+  }
+
+@media (min-width: 768px) {
+
+    .cards {
+        padding-top: 72px;
+    }
+
+    .card-flex {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+        padding-top: 35px;
+    }
+
+    .card {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: space-between;
+        text-decoration: none;
+        height: 100%;
+        box-shadow: 0 3px 15px rgba(23, 76, 79, 0.2);
+        border-bottom: 5px solid #84A7AA;
+        border-radius: 5px;
+        padding: 28px 62px 40px 62px !important;
+        margin-left: 37px;
+        position: relative;
+        overflow: visible !important;
+    }
+
+    .cards .fx-accordion__panel__content {
+        margin-bottom: 0;
+    }
+
+    .card__bottom {
+        padding-top: 20px;
+    }
+
+    .card__img-wrap {
+        position: absolute;
+        left: -37px;
+        width: 74px;
+        height: 74px;
+        border-radius: 50%;
+        background-color: #D8E2E3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card__roun-img {
+        width: 45px;
+        height: auto;
+    }
+    
+    .card__cta {
+        font-size: 15px;
+    }
+
+    .card-item.fx-accordion__panel {
+        margin-bottom: 30px;
+    }
+
+    .cards .fx-accordion__panel__content {
+        border-bottom: 5px solid #84A7AA;
+    }
+    
+}
+
+
+@media (min-width: 1200px) {
+    .card-item.fx-accordion__panel {
+        margin-bottom: 0;
+    }
+
+    .cards {
+        padding-top: 125px;
+    }
+
+    .card-flex {
+        padding-top: 53px;
+    }
+
+    .card__description,
+    .card__bottom {
+        display: none;
+    }
+
+    .card  {
+        height: 302px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 0 32px !important;
+        cursor: pointer;
+    }
+
+    .card__img-wrap {
+        position: relative;
+        width: 99px;
+        left: auto;
+        height: 99px;
+        margin: 0 auto 25px auto;
+        transition: all .3s;
+    }
+
+    .card__img-wrap img {
+        width: 63px;
+        height: auto;
+    }
+
+    .card:hover {
+        padding-bottom: 46px;
+    }
+
+    .card:hover .card__description {
+        display: block;
+        padding-bottom: 30px;
+    }
+
+    .card:hover .card__img-wrap {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 13px;
+    }
+
+    .card:hover .card__img-wrap img {
+        width: 40px;
+    }
+
+    .card__bottom {
+        padding-top: 0;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+    }
+
+    .card:hover .card__bottom {
+        display: block;
+    }
+
+    .card__cta {
+        display: block;
+        border-radius: 0 0 3px 3px;
+    }
+
+    .card-item {
+        margin-bottom: 0;
+    }
+
+    .card {
+        margin: 0;
+    }
+
+    .cards:hover .fx-accordion__panel__content {
+        border-bottom: none;
+    }
+
+    .js-card-slider.slick-slider .slick-prev, 
+    .js-card-slider.slick-slider .slick-next {
+        background: #21555A;
+        bottom: 39%;
+    }
+
+    .js-card-slider.slick-slider .slick-next {
+        left: auto;
+        right: 22px;
+    }
+
+    .js-card-slider.slick-slider .slick-slide {
+        padding-top: 20px;
+    }
+
+    .slick-slider.card-flex {
+        padding-top: 33px;
+    }
+}
+
+
+
+

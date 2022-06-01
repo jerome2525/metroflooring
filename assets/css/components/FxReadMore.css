@@ -1,0 +1,84 @@
+/*------------------------------------*\
+    
+    Hide/Show Text Area - Global styling for all hide/show text
+
+    This method is CSS heavy and light on JS, which is important for good SEO and CWV results
+    Find the code snippet here: https://webfxcodelibrary.webpagefxstage.com/#intermediate_cssshowhidetext
+
+\*------------------------------------*/
+
+  
+.read-more__content {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+/* Safari fix, it needs to be inline for the clamp to work on safari  */
+.read-more__wrapper {
+	display: inline;
+}
+
+.read-more__content.is-expanded {
+	-webkit-line-clamp: initial !important;
+}
+
+.expand {
+	text-decoration: none;
+	position: relative;
+	display: inline-block;
+	margin-top: 0;
+}
+
+.more-text {
+    -webkit-line-clamp: 5;
+}
+
+.more-tex-tab {
+	-webkit-line-clamp: 4;
+}
+
+.expand {
+	margin-bottom: 15px;
+	margin-top: 5px;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #84A7AA;
+	font-weight: 700;
+	letter-spacing: 0.1em;
+	display: inline-block;
+	position: relative;
+	padding-right: 18px;
+	border: none;
+}
+
+.expand::before {
+	content: "\e910";
+	font-family: 'icomoon';
+	font-size: 11px;
+	color: #84A7AA;
+	font-weight: 700;
+	position: absolute;
+	right: 0;
+	top: 5px;
+}
+
+.expand:hover {
+	background-color: transparent
+}
+
+@media (min-width: 768px) {
+	.more-text {
+		-webkit-line-clamp: initial !important;
+	}
+
+}
+
+
+@media (min-width: 1200px) {
+	.more-tex-tab {
+		-webkit-line-clamp: 6;
+	}
+
+}

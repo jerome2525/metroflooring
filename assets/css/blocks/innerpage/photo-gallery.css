@@ -1,0 +1,258 @@
+.photo-gallery {
+    padding: 30px 0 0;
+    color: #2F3E46;
+}
+
+.photo-gallery-top-content {
+    padding-bottom: 25px;
+}
+
+.photo-gallery-image {
+    position: relative;
+    background: none;
+    border: none;
+    width: 100%;
+    height: 157px;
+    display: block;
+}
+
+.photo-gallery-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+.gallery-lightbox-icon {
+    position: absolute;
+    right: 7px;
+    bottom: 7px;
+    background: rgba(33, 85, 90, 0.64);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    font-size: 13px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: normal;
+    line-height: 2.46em;
+}
+
+.gallery-btn {
+    padding-top: 26px;
+}
+
+.js-photo-gallery {
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: -8px;
+    margin-left: -8px;
+    justify-content: center;
+    text-align: center;
+}
+  
+.photo-gallery-item {
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    flex-basis: auto;
+    padding-right: 0;
+    padding-left: 0;
+    margin: 0 8px;
+    width: calc(50% - 32px);
+}
+
+.photo-gallery-listings .fx-slider .fx-slide:nth-child(2) {
+    display: block;
+}
+
+.photo-gallery-listings {
+    margin: 0 -8px;
+}
+
+.photo-gallery-listings .slick-arrow {
+    color: #84A7AA;
+    border: 1px solid #D8E2E3;
+    z-index: 99;
+    width: 53px;
+    height: 53px;
+}
+
+.photo-gallery-listings .slick-prev {
+    left: auto;
+    right: 68px;
+    margin-left: 0px;
+}
+
+.photo-gallery-listings .slick-next {
+    left: auto;
+    right: 16px;
+    margin-right: 0px;
+}
+
+.photo-gallery-listings .slick-arrow::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 21px;
+    line-height: 2.52em;
+    font-family: 'icomoon';
+    font-weight: normal;
+}
+
+.gallery-lightbox-icon i {
+    padding: 9px 0 0;
+    display: inline-block;
+}
+
+@media (min-width: 768px) {
+    .js-photo-gallery {
+        display: block;
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-bottom: 70px;
+    }
+      
+    .photo-gallery-item {
+        margin: 0 0;
+        width: auto;
+    }
+
+    .photo-gallery {
+        padding-top: 46px;
+    }
+
+    .photo-gallery-listings {
+        margin: 0 -16px;
+    }
+
+    .photo-gallery-listings .slick-initialized .slick-slide {
+        margin: 0 16px;
+    }
+
+    .gallery-btn {
+        padding-top: 0;
+        margin-top: -50px;
+    }
+
+    .gallery-lightbox-icon {
+        right: 9px;
+        bottom: 9px;
+        width: 41px;
+        height: 41px;
+        font-size: 17px;
+        line-height: 2.41em;
+    }
+
+    .gallery-lightbox-icon i {
+        padding: 12px 0 0;
+    }
+
+    .photo-gallery-image {
+        height: 200px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .photo-gallery-image {
+        height: 329px;
+        position: relative;
+        transition: all .5s ease-in-out;
+    }
+
+    .photo-gallery-image::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(33, 85, 90, 0.64);
+        opacity: 0;
+    }
+
+    .photo-gallery-image:hover::before {
+        opacity: 1;
+    }
+
+    .photo-gallery {
+        padding-top: 70px;
+    }
+
+    .photo-gallery-top-content {
+        padding-bottom: 28px;
+    }
+
+    .gallery-lightbox-icon {
+        right: auto;
+        bottom: auto;
+        left: 50%;
+        top: 50%;
+        width: 100%;
+        height: fit-content;
+        font-size: 27px;
+        line-height: 1em;
+        transform: translate(-50%, -50%);
+        color: #FFFFFF;
+        border-radius: 0;
+        background: none;
+        text-align: center;
+        opacity: 0;
+        transition: all ease-in-out 0.3s;
+    }
+
+    .gallery-lightbox-icon i {
+        padding: 0 0 0;
+        display: block;
+    }
+
+    .gallery-lightbox-icon span {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        color: #FFFFFF;
+    }
+
+    .photo-gallery-image:hover .gallery-lightbox-icon {
+        opacity: 1;
+    }
+
+    .photo-gallery-image:hover {
+        transform: scale(1.1);
+        transition: all .5s;
+    }
+
+    .photo-gallery-listings .slick-initialized .slick-slide {
+        margin: 16px 17px;
+    }
+
+    .js-photo-gallery {
+        padding-bottom: 90px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,169 @@
+.contact-form-stap {
+	display: flex;
+	align-items: center;
+	margin: 38px 0 15px 0;
+}
+
+.contact-stap-numder {
+	width: 50px;
+	height: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50px;
+	background-color: #D8E2E3;
+}
+
+.contact-stap-numder h2 {
+	font-size: 25px;
+	color: #21555A;
+	padding-bottom: 0;
+	padding-right: 2px;
+	font-weight: 500;
+}
+
+.contact-stap-numder h5 { 
+	color: #84A7AA;
+	font-size: 12px;
+	padding-bottom: 0;
+	margin-top: 15px;
+	font-weight: 500;
+	padding-left: 6px;
+	position: relative;
+}
+
+.contact-stap-numder h5:before {
+	content: '/ ';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+} 
+
+.contact-stap-heading {
+	width: calc(100% - 50px);
+	height: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+.contact-stap-heading h4 {
+	color: #84A7AA;
+	font-size: 20px;
+	text-transform: uppercase;
+	padding: 0 11px;
+	background-color: #fff;
+	display: inline-block;
+	letter-spacing: 0.1em;
+}
+
+.contact-stap-heading:after {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 0;
+	background-color: #84A7AA;
+	width: 100%;
+	height: 1px;
+	transform: translate(0 , -50%);
+	z-index: -1;
+}
+
+.contact-section .contact-top-content span {
+	width: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+.contact-section .contact-top-content h3 {
+	text-transform: capitalize;
+}
+
+.contact-section .contact-top-content span:before {
+	content: '';
+	position: absolute;
+	bottom: 4px;
+	left: 0;
+	width: 104%;
+	height: 44%;
+	background-color: #D8E2E3;
+	border-radius: 3px;
+	z-index: -1;
+}
+
+.contact-section .contact-top-content h4 {
+	text-transform: capitalize;
+}
+
+.form-text-marging:first-child input {
+	margin-bottom: 14px;
+}
+
+.contact-section .btn {
+	width: 100%;
+	display: block;
+}
+
+.contact-section .btn::before {
+	display: none;
+}
+
+.contact-section .btn i {
+	font-size: 11px;
+	vertical-align: middle;
+	padding: 0 0 3px 3px;
+}
+
+.form-col-link {
+	font-size: 14px;
+	padding: 0 0 39px 0;
+	color: #21555A;
+}
+
+@media(min-width: 1200px) {
+	.contact-form-stap {
+		margin: 0px 0 0 0;
+	}
+	.contact-stap-numder {
+		width: 73px;
+		height: 73px;
+	}
+	
+	.contact-stap-heading {
+		width: calc(100% - 73px);
+	}
+
+	.contact-stap-numder h2 {
+		font-size: 50px;
+		padding-right: 0;
+	}
+
+	.contact-stap-numder h5 {
+		font-size: 19px;
+		margin-top: 24px;
+		padding-left: 15px;
+	}
+
+	.contact-stap-numder h5:before {
+		bottom: 0;
+		left: 6px;
+	} 
+
+	.contact-stap-heading h4 {
+		padding-left: 41px;
+	}
+
+	.form-col-wrapper {
+		margin-left: 114px;
+		width: calc(100% - 114px);
+		padding: 0 0;
+	}
+
+	.contact-section .contact-top-content h4 {
+		padding-bottom: 0;
+	}
+	
+	.contact-section .contact-top-content p {
+		padding: 38px 0;
+	}
+}

@@ -1,0 +1,231 @@
+/*------------------------------------*\
+    
+    FX Tabs/Accordion - Global styling for all tabs/accordions
+
+    Add custom tabs/accordion styling to this file if it should be applied to all tabs/accordions on the site
+    Otherwise, put your styles in individual block stylesheets
+
+\*------------------------------------*/
+
+.tab-accordion__panel:not(.is-active) .tab-accordion__panel__content {
+    display: none;
+}
+
+.tab-accordion-top-content {
+    padding-bottom: 20px;
+}
+
+.tab-accordion__tabs {
+    display: flex;
+    flex-wrap: wrap;
+    top: 1px;
+    position: relative;
+    z-index: 2;
+    border-bottom: 5px solid #D8E2E3;
+}
+
+.tab-accordion__tab,
+.tab-accordion__panel__toggle {
+    list-style-type: none !important;
+    margin: 0 0 0;
+    padding: 0;
+    display: block;
+    color: inherit;
+    line-height: normal;
+    background: transparent;
+    padding: 15px 0 10px 0;
+    text-decoration: none;
+    border: none;
+    border-bottom: 5px solid #D8E2E3;
+    border-radius: 0;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    color: #043F45;
+    position: relative;
+}
+
+.tab-accordion__panel__toggle::before {
+    content: "\e903";
+    font-family: 'icomoon';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 13px;
+    font-weight: normal;
+    color: #043F45;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 3.4em;
+    
+}
+
+.tab-accordion__panel__toggle.is-active {
+    border-bottom: 5px solid #84A7AA;
+}
+
+.tab-accordion__panel__toggle.is-active::before {
+    transform: rotate(-180deg);
+    background: #21555A;
+    color: #fff;
+    border-radius: 0 0 3px 3px;
+    bottom: -5px;
+}
+
+
+.tab-accordion__tab.is-active,
+.tab-accordion__tab:hover,
+.tab-accordion__tab:focus,
+.tab-accordion__panel__toggle.is-active,
+.tab-accordion__panel__toggle:hover,
+.tab-accordion__panel__toggle:focus {
+    text-decoration: none;
+}
+
+.tab-accordion__panel__content {
+    padding: 20px 25px 35px;
+    box-shadow: 0 10px 15px rgba(23, 76, 79, 0.16);
+    border-top: 0;
+    overflow: hidden;
+    color: #2F3E46;
+    background: #fff;
+    border-radius: 3px;
+}
+
+.tab-accordion {
+    position: relative;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.tab-accordion__panel__content .blog-listing__pagination [class*="col-"] {
+    padding-left: 0;
+}
+
+.industries-info-image img {
+    border-radius: 3px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.industries-info-image {
+    padding-bottom: 20px;
+}
+
+.industries-info-details p {
+    padding-bottom: 15px;
+}
+
+.industries-info-details ul li {
+    margin-bottom: 10px;
+}
+
+.industries-info-details .btn {
+    margin-top: 10px;
+}
+
+.tab-accordion__tab.is-active::before {
+    content: "";
+    font-family: 'icomoon';
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 5px;
+    background: #84A7AA;
+}
+
+@media (min-width: 768px) {
+    .tab-accordion__panel__content {
+        padding: 40px 45px 48px;
+    }
+
+    .industries-info-details ul {
+        column-count: 2;
+        padding: 0 0 15px 0px;
+    }
+
+    .tab-accordion {
+        padding-bottom: 80px;
+    }
+
+}
+
+
+@media (min-width: 1200px) {
+    .tab-accordion__panel__content {
+        position: relative;
+        width: 100%;
+        padding: 75px 75px;
+        z-index: 99;
+    }
+
+    .tab-accordion__tab,
+    .tab-accordion__panel__toggle {
+        margin: 0;
+        width: 33.33%;
+        padding: 16px 10px;
+        border-bottom: none;
+        text-align: center;
+    }
+
+    .industries-info-column {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .industries-info-image {
+        width: 395px;
+        margin-top: 8px;
+    }
+
+    .industries-info-details {
+        width: calc((100% - 395px));
+        padding-left: 50px;
+    }
+
+    .industries-info-details ul li {
+        margin-bottom: 8px;
+    }
+
+    .tab-accordion-top-content {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .tab-accordion {
+        padding-bottom: 0;
+        padding-top: 80px;
+        margin-bottom: -160px;
+    }
+
+    .tab-accordion__tab.is-active {
+        color: #84A7AA;
+    }
+
+}
+
+@media (min-width: 1366px) {
+    .industries-info-details {
+        padding-left: 85px;
+    }
+
+    .tab-accordion {
+        margin-bottom: -240px;
+    }
+
+}
+
+@media (min-width: 1800px) {
+
+    .tab-accordion {
+        margin-bottom: -300px;
+    }
+
+}

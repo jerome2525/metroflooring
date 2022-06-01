@@ -1,0 +1,145 @@
+
+.schedule-form .btn {
+    width: 100%;
+    display: block;
+}
+
+.schedule-form .btn::before {
+    display: none;
+}
+
+.schedule-form .btn i {
+    font-size: 11px;
+    vertical-align: middle;
+    padding: 0 0 3px 3px;
+}
+
+.schedule-wrapper {
+    background: #fff;
+    box-shadow: 0 3px 15px rgba(23, 76, 79, 0.2);
+    border-radius: 3px;
+    margin-top: -205px;
+    position: relative;
+    z-index: 9;
+}
+
+.schedule-info {
+    padding: 30px 30px;
+    position: relative;
+}
+
+.schedule-form {
+    padding: 30px 30px;
+    background: #EBF0F1;
+    border-radius: 0 0 3px 3px;
+}
+
+.schedule-form h4 {
+    padding-bottom: 30px;
+    color: #043F45;
+}
+
+.schedule-info p {
+    position: relative;
+    z-index: 1;
+}
+
+.logo-icon {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    max-width: 315px;
+    z-index: -1;
+}
+
+.schedule-inner .schedule-wrapper {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+
+    .schedule-info {
+        padding: 50px 56px;
+    }
+    
+    .schedule-form {
+        padding: 40px 56px 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .logo-icon {
+        max-width: 100%;
+    }
+
+    .schedule-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .schedule-info {
+        width: 45%;
+    }
+
+    .schedule-form {
+        width: 55%;
+        padding: 40px 56px 30px;
+    }
+
+    .schedule-wrapper {
+        margin-top: -490px;
+    }
+
+    .schedule-form h4 {
+        padding-bottom: 40px;
+        text-align: center;
+        position: relative;
+    } 
+
+    .schedule-info h2 {
+        padding-bottom: 45px;
+        position: relative;
+    }
+
+    .schedule-inner .schedule-info h2 {
+        padding-bottom: 30px;
+    }
+
+    .schedule-info h5 {
+        padding-bottom: 20px;
+        position: relative;
+    }
+
+    .schedule-info p {
+        position: relative;
+    }
+
+    .schedule-inner .schedule-form .btn {
+        margin-top: 10px;
+    }
+
+}
+
+@media (min-width: 1366px) {
+    .schedule-form {
+        padding: 75px 110px 60px;
+    }
+
+    .schedule-info {
+        padding: 75px 80px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

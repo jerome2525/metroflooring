@@ -1,0 +1,138 @@
+.signature-quote {
+    position: relative;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.signature-icon {
+    font-size: 50px;
+    color: #D8E2E3;
+    line-height: 1em;
+    font-weight: normal;
+    padding-bottom: 12px;
+}
+
+.signature-info h4 {
+    font-size: 13px;
+    color: #043F45;
+    line-height: 1.5em;
+    font-weight: 700;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.signature-info {
+    padding-bottom: 25px;
+    position: relative;
+}
+
+.signature-info::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    height: 1px;
+    width: 110px;
+    background: #84A7AA;
+    transform: translate(-50%, 0);
+}
+
+.signature-content {
+    padding: 25px 0 0;
+}
+
+.signature-content h3 {
+    font-size: 18px;
+    color: #043F45;
+    line-height: 1.66em;
+    font-weight: 500;
+}
+
+.signature-content h3 span {
+    font-weight: 700;
+    position: relative;
+}
+
+.signature-content h3 span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 10px;
+    width: 100%;
+    background: rgba(132, 167, 170, 0.50);
+    z-index: -1;
+}
+
+@media (min-width: 768px) {
+    .signature-quote {
+        padding: 70px 0;
+    }
+    
+    .signature-info h4 {
+        font-size: 15px;
+    }
+
+    .signature-content h3 {
+        font-size: 24px;
+    }
+
+}
+@media (min-width: 1200px) {
+
+    .signature-quote {
+        padding: 110px 0;
+    }
+
+    .signature-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .signature-info {
+        width: 358px;
+        padding-right: 20px;
+        padding-bottom: 0;
+    }
+
+    .signature-content {
+        width: calc(100% - 358px);
+        padding-left: 94px;
+        border-left: 1px solid #84A7AA;
+        text-align: left;
+        padding-top: 0;
+    }
+
+    .signature-content h3 {
+        font-size: 30px;
+        padding-bottom: 0;
+    }
+
+    .signature-info h4 {
+        font-size: 16px;
+    }
+
+    .signature-info::before {
+        display: none;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

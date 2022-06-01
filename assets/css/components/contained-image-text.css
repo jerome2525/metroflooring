@@ -1,0 +1,131 @@
+/*------------------------------------*\
+    
+    Contained Image + Text Block Customizations - Global Styling
+
+    The styles you add to this file will be applied to the 'Contained Image + Text' block. 
+    If there is any reasons why you would need to style them seperately,
+    please create a block-specific stylesheet for it (don't forget to resiger that block-specific stylesheet in acf-start-blocks.php)
+
+\*------------------------------------*/
+
+.image-text__img img {
+    width: 100%;
+    height: 226px;
+    object-fit: cover;
+    display: block;
+}
+
+.image-text .container {
+    padding: 0;
+}
+
+.image-text .flex-row {
+    display: block;
+    flex-wrap: wrap;
+}
+
+.image-text__text {
+    padding: 25px 22px 44px;
+}
+
+.soft-triple-sm-top p {
+    padding-bottom: 20px;
+}
+
+.soft-triple-sm-top p:last-child {
+    padding-bottom: 0;
+}
+
+.image-text__text {
+    position: relative;
+}
+
+.blue-logo-icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.blue-logo-icon img {
+    max-width: 100%;
+    display: block;
+}
+
+
+@media (min-width: 768px) {
+    .image-text .container {
+        padding: 0 52px;
+    }
+
+    .image-text__text {
+        padding: 40px 52px 60px;
+    }
+
+    .image-text {
+        padding: 25px 0;
+    }
+
+    .image-text__img img {
+        height: 400px;
+    }
+
+    .image-text--right {
+        padding-bottom: 70px;
+    }
+
+}
+
+
+@media (min-width: 1200px) {
+    .image-text .flex-row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .image-text__img {
+        width: 49%;
+        position: relative;    
+    }
+
+    .image-text__text {
+        width: 51%;    
+    }
+    
+    .flex-opposite {
+        flex-direction: row-reverse;
+    }
+
+    .image-text__img img {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        left: 0;
+    }
+
+    .image-text .container {
+        padding: 0 16px;
+    }
+
+    .image-text__text {
+        padding: 65px 99px 82px 70px; 
+    }
+
+    .image-text {
+        padding: 45px 0;
+    }
+
+    .image-text--overlay {
+        padding-bottom: 0;
+        margin-bottom: -100px;
+        position: relative;
+        z-index: 9;
+    }
+
+    .soft-triple-sm-top h5 {
+        padding-bottom: 24px;
+    }
+
+   
+}

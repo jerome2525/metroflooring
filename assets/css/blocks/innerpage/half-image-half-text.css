@@ -1,0 +1,50 @@
+.half-image-half-text {
+    position: relative;
+    color: #2F3E46;
+}
+
+.half-text__text {
+    padding-top: 30px;
+}
+
+.half-image__img img {
+    width: 100%;
+    display: block;
+}
+
+.image-text--inner {
+    padding-top: 60px;
+}
+
+
+@media (min-width: 1025px) {
+    .half-image-half-text__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .half-image__img {
+        width: 50%;
+    }
+
+    .half-text__text {
+        width: 50%;
+        padding-left: 40px;
+    }
+
+    .half-text__text {
+        padding-top: 0;
+    }
+
+    .half-image-half-text {
+        padding: 100px 0;
+    }
+}
+
+
+
+
+
+
